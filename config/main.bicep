@@ -109,6 +109,7 @@ resource containerApp 'Microsoft.App/containerApps@2022-03-01' = {
       ingress: {
         external: true
         targetPort: 3000
+        exposedPort: 3000
         allowInsecure: false
         traffic: [
           {
